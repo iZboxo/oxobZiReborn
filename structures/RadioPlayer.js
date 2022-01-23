@@ -54,7 +54,7 @@ class RadioPlayer {
         radio.connection.destroy();
         client.radio.delete(guild.id);
 
-        return `Done!`
+        return;
     }
 
     static async createResource(url = "https://22603.live.streamtheworld.com/EVROPA2_SC") {
