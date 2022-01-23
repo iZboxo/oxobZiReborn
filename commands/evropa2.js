@@ -17,6 +17,8 @@ new Command({
       const stream = await got.stream('http://ice.actve.net/fm-evropa2-128');
       const lol = connection.play(stream);
 
+      lol.on('')
+
       const embedik = new Discord.MessageEmbed()
         .setColor("RANDOM")
         .setTitle("Evropa 2")
