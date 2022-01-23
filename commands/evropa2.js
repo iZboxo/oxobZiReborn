@@ -23,7 +23,7 @@ new Command({
         .setTimestamp();
       message.reply({ embeds: [ embedik ] });
     } else {
-      message.reply({ content: 'test' });
+      message.reply({ content: 'nejsi vo voice' });
     }
 	}
 });
