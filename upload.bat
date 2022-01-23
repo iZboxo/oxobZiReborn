@@ -3,7 +3,7 @@
 :A
 echo Jdu na to!
 git add . && git commit -m 'update' && git push
-timeout 0
+timeout 1
 GOTO B
 
 :B
