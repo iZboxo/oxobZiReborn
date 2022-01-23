@@ -1,4 +1,4 @@
-const Discord = require('discord.js')
+const { MessageEmbed } = require('discord.js')
 const got = require('got');
 const { AudioPlayerStatus } = require("@discordjs/voice");
 const RadioPlayer = require('../structures/RadioPlayer');
@@ -15,7 +15,7 @@ new Command({
 		if (message.member.voice) {
       RadioPlayer.startRadio(message.guild, message.member.voice.channel);
 
-      const embedik = new Discord.MessageEmbed()
+      const embedik = new MessageEmbed()
         .setColor("RANDOM")
         .setTitle("Evropa 2")
         .setImage("https://img.x-function.tech/ev2.jpg")
