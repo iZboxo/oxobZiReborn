@@ -30,7 +30,7 @@ new Command({
         .setTimestamp();
       message.reply({ content: 'test' });
     } else {
-      message.reply(':x: You must be in channel!');
+      message.reply({ content: 'test' });
     }
 	}
 });
