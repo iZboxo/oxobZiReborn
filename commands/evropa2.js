@@ -12,7 +12,7 @@ new Command({
 	// The function thats executed when the user uses the command.
 	run: async(message) => {
 		if (message.member.voice) {
-      RadioPlayer.startRadio(guild, member.voice.channel);
+      RadioPlayer.startRadio(message.guild, member.voice.channel);
 
       const embedik = new Discord.MessageEmbed()
         .setColor("RANDOM")
