@@ -54,7 +54,7 @@ class RadioPlayer {
         radio.connection.destroy();
         client.radio.cache.delete(guild.id);
 
-        return `${client.config.emoji} Done!`
+        return `Done!`
     }
 
     static async createResource(url = "http://stream.funradio.sk:8000/fun128.mp3") {
