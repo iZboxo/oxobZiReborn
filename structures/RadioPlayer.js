@@ -25,7 +25,7 @@ class RadioPlayer {
             adapterCreator: guild.voiceAdapterCreator
         })
 
-        const subscribe = connection.subscribe((await client.radio?.player));
+        const subscribe = connection.subscribe((await client.radioPlayer));
         radio.connection = connection;
         radio.connection.subscriper = subscribe;
 
