@@ -31,7 +31,7 @@ class RadioPlayer {
 
         await guild.me.voice.setDeaf(true).catch(e => {});
 
-        client.radio.cache.set(guild.id, radio);
+        client.radio.set(guild.id, radio);
 
         return radio;
     }
@@ -39,7 +39,7 @@ class RadioPlayer {
     static stopRadio(guild) {
         const client = guild.client;
 
-        let radio = client.radio.cache.get(guild.id);
+        let radio = client.radio.get(guild.id);
         if(!radio) return `${client.config.emoji} The radio is not on!`;
 
         if(radio['247']) {
@@ -52,7 +52,7 @@ class RadioPlayer {
         }
 
         radio.connection.destroy();
-        client.radio.cache.delete(guild.id);
+        client.radio.delete(guild.id);
 
         return `Done!`
     }
