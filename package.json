@@ -1,0 +1,23 @@
+{
+  "name": "oxobzi",
+  "version": "1.0.0",
+  "description": "Super bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "super"
+  ],
+  "author": "iZboxo",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/voice": "^0.7.5",
+    "@gcommands/voice": "github:Garlic-Team/GVoice",
+    "discord.js": "^13.6.0",
+    "dotenv": "^14.2.0",
+    "ffmpeg-static": "^4.4.1",
+    "gcommands": "^9.0.1-next",
+    "opusscript": "^0.0.8"
+  }
+}
