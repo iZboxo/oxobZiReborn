@@ -57,7 +57,7 @@ class RadioPlayer {
         return `Done!`
     }
 
-    static async createResource(url = "http://stream.funradio.sk:8000/fun128.mp3") {
+    static async createResource(url = "https://ice.actve.net/fm-evropa2-128") {
         const stream = await got.stream(url);
 
         const resource = await createAudioResource(stream, { inputType: StreamType.Arbitrary });
