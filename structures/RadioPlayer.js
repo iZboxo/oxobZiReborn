@@ -48,7 +48,6 @@ class RadioPlayer {
 
             client.gdata[guild.id] = ginfo;
 
-            client.database.set(`guilds`, client.gdata)
             radio['247'] = false;
         }
 
