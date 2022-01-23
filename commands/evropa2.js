@@ -22,6 +22,8 @@ new Command({
         console.log('test')
       })
 
+      
+
       const embedik = new Discord.MessageEmbed()
         .setColor("RANDOM")
         .setTitle("Evropa 2")
