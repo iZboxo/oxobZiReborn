@@ -17,7 +17,9 @@ new Command({
       const stream = await got.stream('http://ice.actve.net/fm-evropa2-128');
       const lol = connection.play(stream);
 
-      lol.on('')
+      lol.on(AudioPlayerStatus.Playing, () => {
+        if(channel.type === "GUILD_STAGE_VOICE") guild.me.voice.setSuppressed(false);
+      })
 
       const embedik = new Discord.MessageEmbed()
         .setColor("RANDOM")
