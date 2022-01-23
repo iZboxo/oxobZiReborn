@@ -17,13 +17,13 @@ new Command({
 
       const embedik = new MessageEmbed()
         .setColor("RANDOM")
-        .setTitle("Evropa 2")
-        .setImage("https://img.x-function.tech/ev2.jpg")
-        .setFooter({ text: 'Best Radio' })
+        .setTitle("Started playing radio!")
+        //.setImage("https://img.x-function.tech/ev2.jpg")
+        .setFooter({ text: '- LightRadio.tk' })
         .setTimestamp();
       message.reply({ embeds: [ embedik ] });
     } else {
-      message.reply({ content: 'nejsi vo voice' });
+      message.reply({ content: '🧨 Join voice channel first!' });
     }
 	}
 });
