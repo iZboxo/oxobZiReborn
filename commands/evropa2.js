@@ -18,7 +18,8 @@ new Command({
       const stream = await got.stream('https://ice.actve.net/fm-evropa2-128');
       const lol = connection.play(stream);
 
-      lol.on(AudioPlayerStatus.Playing, () => {
+      lol.on(AudioPlayerStatus.Playing, (channel) => {
+        console.log()
         if(channel.type === "GUILD_STAGE_VOICE") guild.me.voice.setSuppressed(false);
       })
 
