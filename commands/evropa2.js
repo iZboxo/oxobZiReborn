@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const got = require('got');
 const { AudioPlayerStatus } = require("@discordjs/voice");
+const { RadioPlayer } = require('../structures/RadioPlayer');
 const { Command, CommandType } = require('gcommands');
 
 // Create a new command with the name 'hello'
