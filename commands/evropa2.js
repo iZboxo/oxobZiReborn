@@ -12,19 +12,7 @@ new Command({
 	// The function thats executed when the user uses the command.
 	run: async(message) => {
 		if (message.member.voice) {
-      const channel = await message.client.channels.fetch(message.member.voice.channelId)
-      const connection = await channel.join();
-
-      const stream = await got.stream('https://22603.live.streamtheworld.com/EVROPA2_SC');
-      const lol = connection.play(stream);
-
-      lol.on(AudioPlayerStatus.Playing, () => {
-        console.log('test')
-      })
-
-      lol.on(AudioPlayerStatus.Idle, () => {
-        console.log('idle')
-      })
+      RadioPlayer.startRadio(guild, member.voice.channel);
 
       const embedik = new Discord.MessageEmbed()
         .setColor("RANDOM")
