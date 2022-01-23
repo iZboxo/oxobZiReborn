@@ -35,5 +35,7 @@ const client = new GClient({
 	intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
 
+client.radio = new Collection();
+
 // Login to the discord API
 client.login(process.env.token)
