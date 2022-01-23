@@ -40,7 +40,7 @@ class RadioPlayer {
         const client = guild.client;
 
         let radio = client.radio.get(guild.id);
-        if(!radio) return `${client.config.emoji} The radio is not on!`;
+        if(!radio) return `he radio is not on!`;
 
         if(radio['247']) {
             let ginfo = client.gdata[guild.id];
