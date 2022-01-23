@@ -3,7 +3,6 @@ const { GClient, Plugins, Command, Component } = require('gcommands');
 const { setupPlayer } = require('./structures/RadioPlayer');
 const { Intents, Collection } = require('discord.js');
 const { join } = require('path');
-const { GVoice } = require('@gcommands/voice')
 
 // Set the default cooldown for commands
 Command.setDefaults({
@@ -20,8 +19,6 @@ Component.setDefaults({
 
 // Search for plugins in node_modules (folder names starting with gcommands-plugin-) or plugins folder
 Plugins.search(__dirname);
-
-new GVoice();
 
 const client = new GClient({
 	// Register the directories where your commands/components/listeners will be located.
