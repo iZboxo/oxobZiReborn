@@ -33,7 +33,7 @@ const client = new GClient({
 	// Set the guild where you will be developing your bot. This is usefull cause guild slash commands update instantly.
 	devGuildId: process.env.DEV_SERVER,
 	// Set the intents you will be using (https://discordjs.guide/popular-topics/intents.html#gateway-intents)
-	intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
+	intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_VOICE_STATES],
 });
 
 client.radio = new Collection();
