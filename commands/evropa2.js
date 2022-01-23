@@ -28,7 +28,7 @@ new Command({
 
       const embedik = new Discord.MessageEmbed()
         .setColor("RANDOM")
-        .setTitle("Evropa 2")d
+        .setTitle("Evropa 2")
         .setImage("https://img.x-function.tech/ev2.jpg")
         /*.setFooter("Best radio")*/
         .setTimestamp();
