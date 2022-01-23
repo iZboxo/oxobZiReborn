@@ -8,9 +8,11 @@ new Command({
 	// GCommands Next offers different types of commands, we will only use slash and message commands here.
 	type: [CommandType.SLASH, CommandType.MESSAGE],
 	// The function thats executed when the user uses the command.
-	run: (message) => {
-		if (message.member.voice.channel) {
-            message.member.voice.channel.join()
+	run: async(message) => {
+		if (message.member.voice) {
+            console.log(message.member.voice)
+            const channel = await message.client.channels.fetch(message.member.voice.channelId)
+            channel.join()
               .then(connection => {
                 const embedik = new Discord.MessageEmbed()
                 .setColor("RANDOM")
