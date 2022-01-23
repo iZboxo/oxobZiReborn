@@ -36,6 +36,7 @@ const client = new GClient({
 });
 
 client.radio = new Collection();
+client.radioPlayer = setupPlayer();
 
 // Login to the discord API
 client.login(process.env.token)
