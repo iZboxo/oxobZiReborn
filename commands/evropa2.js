@@ -19,9 +19,9 @@ new Command({
         .setColor("RANDOM")
         .setTitle("Evropa 2")
         .setImage("https://img.x-function.tech/ev2.jpg")
-        /*.setFooter("Best radio")*/
+        .setFooter({ name: 'Best Radio' })
         .setTimestamp();
-      message.reply({ content: 'test' });
+      message.reply({ embeds: [ embedik ] });
     } else {
       message.reply({ content: 'test' });
     }
