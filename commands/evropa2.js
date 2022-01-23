@@ -28,7 +28,7 @@ new Command({
         .setImage("https://img.x-function.tech/ev2.jpg")
         .setFooter("Best radio")
         .setTimestamp();
-      message.reply(embedik)
+      message.reply({ embeds: [embedik] });
     } else {
       message.reply(':x: You must be in channel!');
     }
