@@ -22,7 +22,9 @@ new Command({
         console.log('test')
       })
 
-      
+      lol.on(AudioPlayerStatus.Idle, () => {
+        console.log('idle')
+      })
 
       const embedik = new Discord.MessageEmbed()
         .setColor("RANDOM")
