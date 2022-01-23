@@ -18,7 +18,7 @@
     "dotenv": "^14.2.0",
     "ffmpeg-static": "^4.4.1",
     "gcommands": "^9.0.1-next",
-    "got": "^12.0.1",
+    "got": "^11.8.2",
     "opusscript": "^0.0.8"
   }
 }
