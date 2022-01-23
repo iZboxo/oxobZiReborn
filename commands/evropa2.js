@@ -10,10 +10,11 @@ new Command({
 	// The function thats executed when the user uses the command.
 	run: async(message) => {
 		if (message.member.voice) {
-            console.log(message.member.voice)
             const channel = await message.client.channels.fetch(message.member.voice.channelId)
-            channel.join()
-              .then(connection => {
+            const connection = await channel.join();
+
+            c
+              /*.then(connection => {
                 const embedik = new Discord.MessageEmbed()
                 .setColor("RANDOM")
                 .setTitle("Evropa 2")
@@ -22,7 +23,7 @@ new Command({
                 .setTimestamp();
                   message.reply(embedik)
                   connection.play(`http://ice.actve.net/fm-evropa2-128`);
-              })
+              })*/
               .catch(console.log);
           } else {
             message.reply(':x: You must be in channel!');
