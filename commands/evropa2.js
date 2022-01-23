@@ -16,6 +16,7 @@ new Command({
       const connection = await channel.join();
 
       const stream = await got.stream('http://ice.actve.net/fm-evropa2-128');
+      console.log(stream)
       const lol = connection.play(stream);
 
       lol.on(AudioPlayerStatus.Playing, () => {
