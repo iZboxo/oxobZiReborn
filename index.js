@@ -1,5 +1,6 @@
 require('dotenv').config();
 const { GClient, Plugins, Command, Component } = require('gcommands');
+const { setupPlayer } = require('./structures/RadioPlayer');
 const { Intents, Collection } = require('discord.js');
 const { join } = require('path');
 const { GVoice } = require('@gcommands/voice')
