@@ -12,7 +12,7 @@ new Command({
 	type: [CommandType.SLASH, CommandType.MESSAGE],
 	// The function thats executed when the user uses the command.
 	run: async(message) => {
-		if (message.member.voice) {
+		if (message.member.voice.channel) {
       RadioPlayer.startRadio(message.guild, message.member.voice.channel);
 
       const embedik = new MessageEmbed()
