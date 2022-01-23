@@ -57,7 +57,7 @@ class RadioPlayer {
         return `Done!`
     }
 
-    static async createResource(url = "https://ice.actve.net/fm-evropa2-128") {
+    static async createResource(url = "https://22603.live.streamtheworld.com/EVROPA2_SC") {
         const stream = await got.stream(url);
 
         const resource = await createAudioResource(stream, { inputType: StreamType.Arbitrary });
