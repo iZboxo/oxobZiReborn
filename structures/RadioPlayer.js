@@ -57,7 +57,7 @@ class RadioPlayer {
         return;
     }
 
-    static async createResource(url = "https://22603.live.streamtheworld.com/EVROPA2_SC") {
+    static async createResource(url = "https://cast.beatzone.cz/radio/8470/LightRadio.mp3") {
         const stream = await got.stream(url);
 
         const resource = await createAudioResource(stream, { inputType: StreamType.Arbitrary });
