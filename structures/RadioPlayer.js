@@ -57,7 +57,7 @@ class RadioPlayer {
         return;
     }
 
-    static async createResource(url = "https://translate.google.com/translate_tts?ie=UTF-8&total=1&idx=0&textlen=32&client=tw-ob&q=Hello+guys+and+niggers&tl=en") {
+    static async createResource(url = "https://cast.beatzone.cz/radio/8470/LightRadio.mp3") {
         const stream = await got.stream(url);
 
         const resource = await createAudioResource(stream, { inputType: StreamType.Arbitrary });
