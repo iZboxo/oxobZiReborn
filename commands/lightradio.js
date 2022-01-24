@@ -19,7 +19,7 @@ new Command({
         .setColor("RANDOM")
         .setTitle("Started playing radio!")
         //.setImage("https://img.x-function.tech/ev2.jpg")
-        .setFooter({ text: '- LightRadio.tk' })
+        .setFooter({ text: '- iZboxo.cz' })
         .setTimestamp();
       message.reply({ embeds: [ embedik ] });
     } else {
