@@ -16,7 +16,7 @@ new Command({
 		if (message.member.voice.channel) {
       RadioPlayer.startRadio(message.guild, message.member.voice.channel);
 
-      const res = (await hyttpo.get(`http://${process.env.IP}/api/nowplaying/oxoRaNCS`)).data;
+      const res = (await hyttpo.get(`http://${process.env.ip}/api/nowplaying/oxoRaNCS`)).data;
       console.log(res);
 
       const embedik = new MessageEmbed()
