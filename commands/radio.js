@@ -22,7 +22,7 @@ new Command({
         .setColor("RANDOM")
         .setTitle("Started playing oxoRaNCS!")
         //.setImage("https://img.x-function.tech/ev2.jpg")
-        .setDescription(`Now playing: ${res.now_playing.song.text}`)
+        .setDescription(`Now playing: **${res.now_playing.song.text}**`)
         .setFooter({ text: '- iZboxo.cz' })
         .setTimestamp();
       message.reply({ embeds: [ embedik ] });
