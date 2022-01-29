@@ -8,8 +8,8 @@ new Command({
 	type: [CommandType.SLASH, CommandType.MESSAGE],
 	run: async(message) => {
 		        const endemit = (await hyttpo.get(`https://vicky.izboxo.cz/image`)).data;
-        console.log(endemit.image);
+        //console.log(endemit.image);
 
-        return message.reply(`Hello ${message.user.username}!`);
+        return message.reply(endemit.image);
 	}
 });
