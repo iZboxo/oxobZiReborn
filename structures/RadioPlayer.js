@@ -57,7 +57,7 @@ class RadioPlayer {
         return;
     }
 
-    static async createResource(url = "https://cast.beatzone.cz/radio/8470/LightRadio.mp3") {
+    static async createResource(url = "http://194.55.181.21:8000/radio.mp3") {
         const stream = await got.stream(url);
 
         const resource = await createAudioResource(stream, { inputType: StreamType.Arbitrary });
