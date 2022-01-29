@@ -17,7 +17,7 @@ new Command({
       RadioPlayer.startRadio(message.guild, message.member.voice.channel);
 
       const res = (await hyttpo.get(`http://${process.env.ip}/api/nowplaying/oxoRaNCS`)).data;
-      console.log(res);
+      console.log(res.station.now_playing);
 
       const embedik = new MessageEmbed()
         .setColor("RANDOM")
