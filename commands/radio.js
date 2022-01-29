@@ -24,7 +24,7 @@ new Command({
         .setTitle("Started playing oxoRaNCS!")
         //.setImage("https://img.x-function.tech/ev2.jpg")
         .setDescription(`Now playing: **${output.now_playing.song.text}**`)
-        .setImage(output2)
+        .setImage(output2.image)
         .setFooter({ text: '- iZboxo.cz' })
         .setTimestamp();
       message.reply({ embeds: [ embedik ] });
