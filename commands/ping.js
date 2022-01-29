@@ -8,6 +8,6 @@ new Command({
 	type: [CommandType.SLASH, CommandType.MESSAGE],
 	// The function thats executed when the user uses the command.
 	run: async(message) => {
-		return ctx.reply(`Hello ${ctx.user.username}!`);
+		return message.reply(`Hello ${ctx.user.username}!`);
 	}
 });
