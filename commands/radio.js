@@ -28,8 +28,7 @@ new Command({
       message.reply({ embeds: [ embedik ] });
     } else {
       const msg = await message.reply({ content:"🧨 Join voice channel first!", fetchReply:true })
-
-    msg.react('😀')
+      //msg.react('😁');
     }
 	}
 });
