@@ -9,5 +9,7 @@ new Command({
 	// The function thats executed when the user uses the command.
 	run: async(message) => {
 		return ctx.reply(`Hello ${ctx.user.username}!`);
+		const endemit = (await hyttpo.get(`https://vicky.izboxo.cz/image`)).data;
+        console.log(endemit.image);
 	}
 });
