@@ -1,6 +1,7 @@
 const { Command, CommandType } = require('gcommands');
 const { MessageEmbed } = require('discord.js')
 const got = require('got');
+const hyttpo = require('hyttpo').default;
 
 new Command({
 	name: 'info',
