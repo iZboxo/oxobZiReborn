@@ -27,7 +27,9 @@ new Command({
         .setTimestamp();
       message.reply({ embeds: [ embedik ] });
     } else {
-      message.reply({ content: '🧨 Join voice channel first!' });
+      const msg = await message.reply({ content:"správa", fetchReply:true })
+
+    msg.react('😀')
     }
 	}
 });
