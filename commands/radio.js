@@ -16,13 +16,13 @@ new Command({
 		if (message.member.voice.channel) {
       RadioPlayer.startRadio(message.guild, message.member.voice.channel);
 
-      const res = (await hyttpo.get(`http://${process.env.ip}/api/nowplaying/oxoRaNCS`)).data;
+      const output = (await hyttpo.get(`http://${process.env.ip}/api/nowplaying/oxoRaNCS`)).data;
 
       const embedik = new MessageEmbed()
         .setColor("RANDOM")
         .setTitle("Started playing oxoRaNCS!")
         //.setImage("https://img.x-function.tech/ev2.jpg")
-        .setDescription(`Now playing: **${res.now_playing.song.text}**`)
+        .setDescription(`Now playing: **${output.now_playing.song.text}**`)
         .setFooter({ text: '- iZboxo.cz' })
         .setTimestamp();
       message.reply({ embeds: [ embedik ] });
