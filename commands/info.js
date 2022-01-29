@@ -9,7 +9,7 @@ new Command({
 	type: [CommandType.SLASH, CommandType.MESSAGE],
 	run: (message) => {
 
-        const output = (await hyttpo.get(`https://vicky.izboxo.cz/image`)).data;
+        const output = (await hyttpo.get(`https://vicky.izboxo.cz/image`));
         console.log(output);
 
 		const embedik = new MessageEmbed()
