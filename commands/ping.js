@@ -1,4 +1,6 @@
 const { Command, CommandType } = require('gcommands');
+const hyttpo = require('hyttpo').default;
+
 
 // Create a new command with the name 'hello'
 new Command({
