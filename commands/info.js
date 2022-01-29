@@ -3,8 +3,8 @@ const { MessageEmbed } = require('discord.js')
 const got = require('got');
 
 new Command({
-	name: 'hello',
-	description: 'Says hello!',
+	name: 'info',
+	description: 'Get bot info!',
 	type: [CommandType.SLASH, CommandType.MESSAGE],
 	run: (message) => {
 		const embedik = new MessageEmbed()
