@@ -17,7 +17,7 @@ new Command({
 
       const embedik = new MessageEmbed()
         .setColor("RANDOM")
-        .setTitle("Started playing radio!")
+        .setTitle("Started playing oxoRaNCS!")
         //.setImage("https://img.x-function.tech/ev2.jpg")
         .setFooter({ text: '- iZboxo.cz' })
         .setTimestamp();
