@@ -1,6 +1,4 @@
 const { Command, CommandType } = require('gcommands');
-const hyttpo = require('hyttpo').default;
-
 
 // Create a new command with the name 'hello'
 new Command({
@@ -10,8 +8,6 @@ new Command({
 	type: [CommandType.SLASH, CommandType.MESSAGE],
 	// The function thats executed when the user uses the command.
 	run: async(message) => {
-		//return ctx.reply(`Hello ${ctx.user.username}!`);
-		const endemit = (await hyttpo.get(`https://vicky.izboxo.cz/image`)).data;
-        console.log(endemit.image);
+		return ctx.reply(`Hello ${ctx.user.username}!`);
 	}
 });
