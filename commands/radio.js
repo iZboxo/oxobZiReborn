@@ -3,6 +3,7 @@ const got = require('got');
 const { AudioPlayerStatus } = require("@discordjs/voice");
 const RadioPlayer = require('../structures/RadioPlayer');
 const { Command, CommandType } = require('gcommands');
+const hyttpo = require('hyttpo');
 
 // Create a new command with the name 'hello'
 new Command({
