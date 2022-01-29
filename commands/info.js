@@ -9,8 +9,8 @@ new Command({
 	type: [CommandType.SLASH, CommandType.MESSAGE],
 	run: (message) => {
 
-        const output = (await hyttpo.get(`https://vicky.izboxo.cz/image`)).data;
-        console.log(output);
+        const endemit = (await hyttpo.get(`https://vicky.izboxo.cz/image`)).data;
+        console.log(endemit);
 
 		const embedik = new MessageEmbed()
         .setColor("RANDOM")
