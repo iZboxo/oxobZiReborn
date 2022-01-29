@@ -7,7 +7,7 @@ new Command({
 	// GCommands Next offers different types of commands, we will only use slash and message commands here.
 	type: [CommandType.SLASH, CommandType.MESSAGE],
 	// The function thats executed when the user uses the command.
-	run: async(message) => {
-		return message.reply(`Hello ${ctx.user.username}!`);
+	run: (ctx) => {
+		return ctx.reply(`Hello ${ctx.user.username}!`);
 	}
 });
