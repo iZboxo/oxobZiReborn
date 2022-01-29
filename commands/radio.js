@@ -19,7 +19,7 @@ new Command({
         .setColor("RANDOM")
         .setTitle("Started playing oxoRaNCS!")
         //.setImage("https://img.x-function.tech/ev2.jpg")
-        .setDescription("")
+        .setDescription("ncs release něco něco něco")
         .setFooter({ text: '- iZboxo.cz' })
         .setTimestamp();
       message.reply({ embeds: [ embedik ] });
