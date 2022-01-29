@@ -27,7 +27,7 @@ new Command({
         .setTimestamp();
       message.reply({ embeds: [ embedik ] });
     } else {
-      const msg = await message.reply({ content:"správa", fetchReply:true })
+      const msg = await message.reply({ content:"🧨 Join voice channel first!", fetchReply:true })
 
     msg.react('😀')
     }
