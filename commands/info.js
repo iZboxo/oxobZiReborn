@@ -10,6 +10,7 @@ new Command({
 	run: (message) => {
 
         const output = (await hyttpo.get(`https://vicky.izboxo.cz/image`)).data;
+        console.log(output);
 
 		const embedik = new MessageEmbed()
         .setColor("RANDOM")
