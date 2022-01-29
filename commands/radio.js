@@ -3,7 +3,7 @@ const got = require('got');
 const { AudioPlayerStatus } = require("@discordjs/voice");
 const RadioPlayer = require('../structures/RadioPlayer');
 const { Command, CommandType } = require('gcommands');
-const hyttpo = require('hyttpo');
+const hyttpo = require('hyttpo').default;
 
 // Create a new command with the name 'hello'
 new Command({
@@ -15,6 +15,8 @@ new Command({
 	run: async(message) => {
 		if (message.member.voice.channel) {
       RadioPlayer.startRadio(message.guild, message.member.voice.channel);
+
+      const res = hyttpo.get('http://194.55.181.21/api/nowplaying/oxoRaNCS')
 
       const embedik = new MessageEmbed()
         .setColor("RANDOM")
