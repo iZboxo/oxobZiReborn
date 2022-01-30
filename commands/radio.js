@@ -16,7 +16,7 @@ new Command({
         description: 'Show what is plaing right now!'
     },
     {
-        name: 'pause',
+        name: 'ping',
         type: ArgumentType.SUB_COMMAND,
         description: 'Ping'
     }
