@@ -1,4 +1,4 @@
-const { Command, CommandType } = require('gcommands');
+const { Command, CommandType, ArgumentType } = require('gcommands');
 
 new Command({
 	name: 'ping',
@@ -6,7 +6,8 @@ new Command({
 	type: [CommandType.SLASH, CommandType.MESSAGE],
     arguments: [
         {
-            name: 'no'
+            name: 'nowplaying',
+            type: ArgumentType.SU
         }
     ],
 	run: (message) => {
