@@ -9,6 +9,18 @@ new Command({
 	name: 'radio',
 	description: 'Listen to music!',
 	type: [CommandType.SLASH, CommandType.MESSAGE],
+  arguments: [
+    {
+        name: 'nowplaying',
+        type: ArgumentType.SUB_COMMAND,
+        description: 'omg nowplejing'
+    },
+    {
+        name: 'pause',
+        type: ArgumentType.SUB_COMMAND,
+        description: 'omg pauz'
+    }
+],
 	run: async(message) => {
 		if (message.member.voice.channel) {
       RadioPlayer.startRadio(message.guild, message.member.voice.channel);
