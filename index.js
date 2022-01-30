@@ -6,7 +6,7 @@ const { join } = require('path');
 
 // Set the default cooldown for commands
 Command.setDefaults({
-	cooldown: '20s',
+	cooldown: '5s',
 });
 
 // Set the default onError function for components
