@@ -14,12 +14,12 @@ new Command({
         name: 'nowplaying',
         type: ArgumentType.SUB_COMMAND,
         description: 'Show what is plaing right now!'
-    },
+    }/*,
     {
         name: 'ping',
         type: ArgumentType.SUB_COMMAND,
         description: 'Ping'
-    }
+    }*/
 ],
 	run: async(message) => {
 
