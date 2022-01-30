@@ -5,13 +5,22 @@ const RadioPlayer = require('../structures/RadioPlayer');
 const { Command, CommandType } = require('gcommands');
 const hyttpo = require('hyttpo').default;
 
-// Create a new command with the name 'hello'
 new Command({
-	name: 'radioo',
+	name: 'radio',
 	description: 'Listen to music!',
-	// GCommands Next offers different types of commands, we will only use slash and message commands here.
 	type: [CommandType.SLASH, CommandType.MESSAGE],
-	// The function thats executed when the user uses the command.
+  arguments: [
+    {
+        name: 'nowplaying',
+        type: ArgumentType.SUB_COMMAND,
+        description: 'Show what is plaing right now!'
+    },
+    {
+        name: 'ping',
+        type: ArgumentType.SUB_COMMAND,
+        description: 'Ping'
+    }
+],
 	run: async(message) => {
 		if (message.member.voice.channel) {
       RadioPlayer.startRadio(message.guild, message.member.voice.channel);
