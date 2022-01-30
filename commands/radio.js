@@ -30,7 +30,7 @@ new Command({
 
         if (subCommand === 'nowplaying') {
             return message.reply(`Now playing: **${output.now_playing.song.text}** !`);
-        } else if(subCommand === 'ping') {
+        } else if(subCommand === 'play') {
           if (message.member.voice.channel) {
             RadioPlayer.startRadio(message.guild, message.member.voice.channel);
       
