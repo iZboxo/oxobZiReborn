@@ -7,7 +7,7 @@ new Command({
     arguments: [
         {
             name: 'nowplaying',
-            type: ArgumentType.SU
+            type: ArgumentType.SUB_COMMAND
         }
     ],
 	run: (message) => {
