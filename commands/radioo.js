@@ -41,5 +41,13 @@ new Command({
       const msg = await message.reply({ content:"🧨 Join voice channel first!", fetchReply:true })
       //msg.react('😁');
     }
+
+    const subCommand = message.arguments.getSubcommand();
+
+        if (subCommand === 'nowplaying') {
+            return message.reply(`Teraz hrá: ${message.user.username}!`);
+        } else if(subCommand === 'ping') {
+            return message.reply(`Ping pong bot is working fine! ${message.user.username}!`);
+        }
 	}
 });
