@@ -15,8 +15,8 @@ new Command({
         const subCommand = message.arguments.getSubcommand();
 
         if (subCommand === 'nowplaying') {
-            
-        }
+            return message.reply(`Teraz hrá: ${message.user.username}!`);
+        } else if(subCom)
 		return message.reply(`Ping pong bot is working fine! ${message.user.username}!`);
 	}
 });
