@@ -16,9 +16,9 @@ new Command({
         description: 'Show what is plaing right now!'
     },
     {
-        name: 'ping',
+        name: 'play',
         type: ArgumentType.SUB_COMMAND,
-        description: 'Ping'
+        description: 'Start your NCS music!'
     }
 ],
 	run: async(message) => {
