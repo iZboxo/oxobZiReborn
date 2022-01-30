@@ -18,7 +18,7 @@ new Command({
     {
         name: 'pause',
         type: ArgumentType.SUB_COMMAND,
-        description: 'omg pauz'
+        description: 'Ping'
     }
 ],
 	run: async(message) => {
