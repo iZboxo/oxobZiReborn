@@ -31,7 +31,22 @@ new Command({
         if (subCommand === 'nowplaying') {
             return message.reply(`Now playing: **${output.now_playing.song.text}** !`);
         } else if(subCommand === 'ping') {
-            return message.reply(`Ping pong bot is working fine! ${message.user.username}!`);
+          if (message.member.voice.channel) {
+            RadioPlayer.startRadio(message.guild, message.member.voice.channel);
+      
+            const embedik = new MessageEmbed()
+              .setColor("RANDOM")
+              .setTitle("Started playing oxoRaNCS!")
+              //.setImage("https://img.x-function.tech/ev2.jpg")
+              .setDescription(`Now playing: **${output.now_playing.song.text}**`)
+              //.setImage(output2.image)
+              .setFooter({ text: '- iZboxo.cz' })
+              .setTimestamp();
+            message.reply({ embeds: [ embedik ] });
+          } else {
+            const msg = await message.reply({ content:"🧨 Join voice channel first!", fetchReply:true })
+            //msg.react('😁');
+          }
         }
 
 		
