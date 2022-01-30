@@ -1,7 +1,7 @@
 const { Command, CommandType, ArgumentType } = require('gcommands');
 
 new Command({
-	name: 'ping',
+	name: 'pong',
 	description: 'What this should do?',
 	type: [CommandType.SLASH, CommandType.MESSAGE],
     arguments: [
