@@ -11,9 +11,9 @@ new Command({
             description: 'omg nowplejing'
         },
         {
-            name: 'nowplaying',
+            name: 'pause',
             type: ArgumentType.SUB_COMMAND,
-            description: 'omg nowplejing'
+            description: 'omg pauz'
         }
     ],
 	run: (message) => {
