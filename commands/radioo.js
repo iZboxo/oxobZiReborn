@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js')
 const got = require('got');
 const { AudioPlayerStatus } = require("@discordjs/voice");
 const RadioPlayer = require('../structures/RadioPlayer');
-const { Command, CommandType } = require('gcommands');
+const { Command, CommandType, ArgumentType } = require('gcommands');
 const hyttpo = require('hyttpo').default;
 
 new Command({
