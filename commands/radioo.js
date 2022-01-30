@@ -6,7 +6,7 @@ const { Command, CommandType, ArgumentType } = require('gcommands');
 const hyttpo = require('hyttpo').default;
 
 new Command({
-	name: 'radio',
+	name: 'radioo',
 	description: 'Listen to music!',
 	type: [CommandType.SLASH, CommandType.MESSAGE],
   arguments: [
