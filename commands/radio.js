@@ -14,12 +14,12 @@ new Command({
         name: 'nowplaying',
         type: ArgumentType.SUB_COMMAND,
         description: 'Show what is plaing right now!'
-    }/*,
+    },
     {
         name: 'ping',
         type: ArgumentType.SUB_COMMAND,
         description: 'Ping'
-    }*/
+    }
 ],
 	run: async(message) => {
 
@@ -30,9 +30,9 @@ new Command({
 
         if (subCommand === 'nowplaying') {
             return message.reply(`Now playing: **${output.now_playing.song.text}** !`);
-        } /*else if(subCommand === 'ping') {
+        } else if(subCommand === 'ping') {
             return message.reply(`Ping pong bot is working fine! ${message.user.username}!`);
-        }*/
+        }
 
 		if (message.member.voice.channel) {
       RadioPlayer.startRadio(message.guild, message.member.voice.channel);
