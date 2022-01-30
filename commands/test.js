@@ -12,6 +12,9 @@ new Command({
         }
     ],
 	run: (message) => {
+        const subCommand = message.arguments.getSubcommand();
+
+        if ()
 		return message.reply(`Ping pong bot is working fine! ${message.user.username}!`);
 	}
 });
