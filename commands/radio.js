@@ -13,7 +13,7 @@ new Command({
     {
         name: 'nowplaying',
         type: ArgumentType.SUB_COMMAND,
-        description: 'omg nowplejing'
+        description: 'Show what is plaing right now!'
     },
     {
         name: 'pause',
