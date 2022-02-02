@@ -21,6 +21,7 @@
     "got": "^11.8.2",
     "hyttpo": "^0.3.5",
     "libsodium-wrappers": "^0.7.9",
+    "moment": "^2.29.1",
     "opusscript": "^0.0.8"
   }
 }
