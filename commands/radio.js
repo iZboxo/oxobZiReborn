@@ -39,7 +39,7 @@ new Command({
               .setColor("RANDOM")
               .setTitle("Started playing oxoRaNCS!")
               //.setImage("https://img.x-function.tech/ev2.jpg")
-              .setDescription(`Now playing: **${output.now_playing.song.text}**`)
+              .setDescription(`Now playing: **${output.now_playing.song.text}**\n 24/7`)
               //.setImage(output2.image)
               .setFooter({ text: '- iZboxo.cz' })
               .setTimestamp();
