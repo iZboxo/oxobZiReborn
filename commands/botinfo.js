@@ -1,5 +1,11 @@
 const { Command, CommandType } = require('gcommands');
 const hyttpo = require('hyttpo').default;
+const Discord = require('discord.js')
+const moment = require('moment');
+const si = require('systeminformation');
+const momentDurationFormatSetup = require("moment-duration-format");
+momentDurationFormatSetup(moment);
+const delay = require("delay");
 
 new Command({
 	name: 'botinfo',
