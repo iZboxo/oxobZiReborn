@@ -14,4 +14,4 @@ new Command({
 	run: async(message) => {
         return message.reply(`${message.ws.ping}`);
 	}
-});d
+});
