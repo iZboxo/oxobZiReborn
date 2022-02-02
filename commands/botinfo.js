@@ -12,6 +12,6 @@ new Command({
 	description: 'Get bot botinfo!',
 	type: [CommandType.SLASH, CommandType.MESSAGE],
 	run: async(message) => {
-        return message.reply();
+        return message.reply(``);
 	}
 });
