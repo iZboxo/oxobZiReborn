@@ -12,8 +12,6 @@ new Command({
 	description: 'Get bot botinfo!',
 	type: [CommandType.SLASH, CommandType.MESSAGE],
 	run: async(message) => {
-		const endemit = (await hyttpo.get(`https://vicky.izboxo.cz/image`)).data;
-
         return message.reply(endemit.image);
 	}
 });
