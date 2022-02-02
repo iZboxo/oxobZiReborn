@@ -22,6 +22,8 @@
     "hyttpo": "^0.3.5",
     "libsodium-wrappers": "^0.7.9",
     "moment": "^2.29.1",
-    "opusscript": "^0.0.8"
+    "moment-duration-format": "^2.3.2",
+    "opusscript": "^0.0.8",
+    "systeminformation": "^5.11.0"
   }
 }
