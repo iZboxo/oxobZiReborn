@@ -9,7 +9,7 @@ const delay = require("delay");
 
 new Command({
 	name: 'botinfo',
-	description: 'Get bot info!',
+	description: 'Get bot botinfo!',
 	type: [CommandType.SLASH, CommandType.MESSAGE],
 	run: async(message) => {
 		const endemit = (await hyttpo.get(`https://vicky.izboxo.cz/image`)).data;
