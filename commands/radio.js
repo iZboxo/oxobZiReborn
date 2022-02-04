@@ -24,7 +24,7 @@ new Command({
 	run: async(message) => {
 
         const output = (await hyttpo.get(`http://${process.env.ip}/api/nowplaying/oxoRaNCS`)).data;
-      const output2 = (await hyttpo.get(`https://vicky.izboxo.cz/image`)).data;
+      //const output2 = (await hyttpo.get(`https://vicky.izboxo.cz/image`)).data;
       const output3 = (await hyttpo.get(`https://azura.izboxo.cz/api/nowplaying/oxoRaNCS`)).data;
 
         const subCommand = message.arguments.getSubcommand();
