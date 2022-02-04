@@ -28,5 +28,7 @@ const client = new GClient({
 
 client.radio = new Collection();
 client.radioPlayer = setupPlayer();
+client.user.setActivity("Game"); 
+
 
 client.login(process.env.token)
