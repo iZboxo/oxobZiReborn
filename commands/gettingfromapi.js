@@ -8,6 +8,6 @@ new Command({
 	run: async(message) => {
 		const output = (await hyttpo.get(`https://azura.izboxo.cz/api/nowplaying/oxoRaNCS`)).data;
 
-        return message.reply(output.now_playing.song.text);
+        return message.reply(output.now_playing.song);
 	}
 });
