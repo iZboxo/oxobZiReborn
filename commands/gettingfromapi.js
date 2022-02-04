@@ -7,7 +7,7 @@ new Command({
 	type: [CommandType.SLASH, CommandType.MESSAGE],
 	run: async(message) => {
 		const output = (await hyttpo.get(`https://azura.izboxo.cz/api/nowplaying/oxoRaNCS`)).data;
-        console.log(output.now_playing.song)
+        console.log(output.now_playing.song.art)
         return message.reply("test");
 	}
 });
