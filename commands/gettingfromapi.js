@@ -6,7 +6,7 @@ new Command({
 	description: 'api get!',
 	type: [CommandType.SLASH, CommandType.MESSAGE],
 	run: async(message) => {
-		const endemit = (await hyttpo.get(`https://vicky.izboxo.cz/image`)).data;
+		const output = (await hyttpo.get(`https://azura.izboxo.cz/api/nowplaying/oxoRaNCS`)).data;
 
         return message.reply(endemit.image);
 	}
