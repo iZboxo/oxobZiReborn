@@ -23,7 +23,6 @@ const client = new GClient({
 	],
 	messagePrefix: '!',
 	devGuildId: process.env.DEV_SERVER,
-	// Set the intents you will be using (https://discordjs.guide/popular-topics/intents.html#gateway-intents)
 	intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_VOICE_STATES],
 });
 
