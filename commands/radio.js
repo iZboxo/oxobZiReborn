@@ -39,7 +39,6 @@ new Command({
             const embedik = new MessageEmbed()
               .setColor("RANDOM")
               .setTitle("Started playing oxoRaNCS!")
-              //.setImage("https://img.x-function.tech/ev2.jpg")
               .setDescription(`Now playing: **${output.now_playing.song.text}**\n 24/7`)
               .setImage(output3.now_playing.song.art)
               .setFooter({ text: '- iZboxo.cz' })
