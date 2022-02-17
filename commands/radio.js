@@ -41,7 +41,7 @@ new Command({
               .setTitle("Started playing oxoRaNCS!")
               .setDescription(`Now playing: **${output.now_playing.song.text}**\n 24/7`)
               //.setImage(output3.now_playing.song.art)
-              .setFooter({ text: '- iZboxod.cz' })
+              .setFooter({ text: '- iZboxo.cz' })
               .setTimestamp();
             message.reply({ embeds: [ embedik ] });
           } else {
