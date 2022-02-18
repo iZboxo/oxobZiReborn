@@ -10,7 +10,7 @@ Command.setDefaults({
 
 Component.setDefaults({
 	onError: (ctx, error) => {
-		return ctx.reply('Error! Please contact develop')
+		return ctx.reply('Error! Please contact develope')
 	} 
 });
 
