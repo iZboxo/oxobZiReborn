@@ -10,7 +10,7 @@ Command.setDefaults({
 
 Component.setDefaults({
 	onError: (ctx, error) => {
-		return ctx.reply('Error appeared')
+		return ctx.reply('Error!')
 	} 
 });
 
@@ -30,4 +30,4 @@ client.radio = new Collection();
 client.radioPlayer = setupPlayer();
 
 
-client.login(process.env.tok
+client.login(process.env.token)
