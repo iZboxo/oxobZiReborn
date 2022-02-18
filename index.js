@@ -10,7 +10,7 @@ Command.setDefaults({
 
 Component.setDefaults({
 	onError: (ctx, error) => {
-		return ctx.reply('Oops! Something went wrong')
+		return ctx.reply('E')
 	} 
 });
 
