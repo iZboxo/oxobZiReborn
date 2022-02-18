@@ -30,4 +30,4 @@ client.radio = new Collection();
 client.radioPlayer = setupPlayer();
 
 
-client.login(process.env.toke
+client.login(process.env.token)
